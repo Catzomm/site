@@ -9,6 +9,7 @@
   @font-face {
     font-family: 'FormaDJRCyrillicDeck';
     src: url('./fonts/FormaDJRCyrillicDeck-Bold-Testing.woff2') format('woff2');
+    src: url('./fonts/FormaDJRCyrillicDeck-Bold-Testing.woff') format('woff');
     font-weight: 200;
     font-style: normal;
   }
@@ -16,6 +17,7 @@
   @font-face {
     font-family: 'FormaDJRCyrillicDeck';
     src: url('./fonts/FormaDJRCyrillicVariable-VF-Testing.woff2') format('woff2');
+    src: url('./fonts/FormaDJRCyrillicVariable-VF-Testing.woff') format('woff');
     font-weight: 300;
     font-style: normal;
   }
@@ -23,6 +25,7 @@
   @font-face {
     font-family: 'FormaDJRCyrillicDeck';
     src: url('./fonts/FormaDJRCyrillicDeck-Medium-Testing.woff2') format('woff2');
+    src: url('./fonts/FormaDJRCyrillicDeck-Medium-Testing.woff') format('woff');
     font-weight: 500;
     font-style: normal;
   }
@@ -38,6 +41,7 @@
   @font-face {
     font-family: 'FormaDJRCyrillicVariable';
     src: url('./fonts/FormaDJRCyrillicVariable-VF-Testing.woff2') format('woff2');
+    src: url('./fonts/FormaDJRCyrillicVariable-VF-Testing.woff') format('woff');
     font-weight: 100 900; 
     font-style: normal;
   }
@@ -45,6 +49,7 @@
   @font-face {
     font-family: 'PantonRustScrSmBoldGr';
     src: url('./fonts/PantonRustScrSmBold-Gr.woff2') format('woff2');
+    src: url('./fonts/PantonRustScrSmBold-Gr.woff') format('woff');
     font-weight: 700;
     font-style: normal;
   }

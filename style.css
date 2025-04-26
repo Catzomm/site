@@ -14,6 +14,10 @@
   --color-border: #CCCCCC;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   overflow-x: hidden;
   width: 100vw;

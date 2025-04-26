@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfTrainCo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrapper">
+      <div class="logotype">
+        <svg class=logotype1 width="66" height="13" viewBox="0 0 66 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.744044 12.9915C0.574515 12.9915 0.452078 12.9238 0.367313 12.7884C0.339058 12.7546 0.32964 12.6868 0.32964 12.6022V9.63151C0.32964 9.52148 0.376731 9.41992 0.461496 9.33529C0.555679 9.25065 0.668698 9.20833 0.800554 9.20833H11.2454C11.4621 9.20833 11.6316 9.16602 11.7446 9.08138C11.8576 8.99675 11.9141 8.88672 11.9141 8.74284C11.9141 8.60742 11.8576 8.48893 11.7352 8.39583C11.6222 8.30273 11.4526 8.26042 11.2454 8.26042L4.95402 8.22656C4.05928 8.2181 3.23047 8.05729 2.48643 7.74414C1.73296 7.43099 1.13019 6.96549 0.678116 6.33073C0.226039 5.69596 0 4.93425 0 4.04557C0 2.66602 0.470914 1.65039 1.40332 0.990234C2.34515 0.330078 3.52244 0 4.96344 0H16.3596C16.4443 0 16.5102 0.033854 16.5668 0.0930988C16.6233 0.152344 16.6515 0.228515 16.6515 0.313151V3.54622C16.6515 3.63086 16.6233 3.70703 16.5668 3.76628C16.5102 3.82552 16.4443 3.85938 16.3596 3.85938H5.75457C5.53795 3.85938 5.36842 3.90169 5.2554 3.98633C5.14238 4.07096 5.08587 4.18099 5.08587 4.32487C5.08587 4.46029 5.14238 4.57878 5.26482 4.67187C5.37784 4.76497 5.54737 4.80729 5.75457 4.80729L12.3285 4.82422C13.7036 4.82422 14.8338 5.17122 15.7003 5.8737C16.5668 6.57617 17 7.5918 17 8.92904C17 9.69922 16.7928 10.3932 16.3878 11.0111C15.9828 11.6289 15.4271 12.1198 14.7114 12.4668C14.005 12.8223 13.2044 13 12.3191 13H0.744044V12.9915Z" fill="#002B41"/>
+            <path d="M21.0566 12.9915C20.3208 12.9915 19.6509 12.8225 19.0283 12.4844C18.4057 12.1463 17.9151 11.6899 17.5472 11.1066C17.1792 10.5319 17 9.89792 17 9.20481V0.262028C17 0.185956 17.0283 0.126788 17.0849 0.0760723C17.1415 0.0253571 17.2075 0 17.2925 0H21.6415C21.7075 0 21.7736 0.0253571 21.8396 0.0760723C21.9057 0.126788 21.934 0.185956 21.934 0.262028V7.92848C21.934 8.12289 22 8.29194 22.1415 8.42718C22.283 8.56242 22.4434 8.63004 22.6415 8.63004H28.3774C28.566 8.63004 28.7358 8.56242 28.8774 8.42718C29.0189 8.29194 29.0849 8.12289 29.0849 7.92848V0.262028C29.0849 0.185956 29.1132 0.126788 29.1792 0.0760723C29.2453 0.0253571 29.3113 0 29.3774 0H33.7075C33.7925 0 33.8585 0.0253571 33.9151 0.0760723C33.9717 0.126788 34 0.185956 34 0.262028V9.21326C34 9.90637 33.8208 10.5403 33.4528 11.1151C33.0849 11.6899 32.5943 12.1463 31.9717 12.4928C31.3491 12.8309 30.6698 13 29.9245 13H21.0566V12.9915Z" fill="#002B41"/>
+            <path d="M34.3339 12.9831C34.2437 12.9831 34.1624 12.9492 34.0993 12.89C34.0361 12.8307 34 12.7546 34 12.6699V0.313151C34 0.228516 34.0361 0.152344 34.0993 0.0930988C34.1624 0.033854 34.2437 0 34.3339 0H45.2713C46.1196 0 46.8957 0.169271 47.6176 0.507812C48.3395 0.846354 48.9171 1.35417 49.3503 2.02279C49.7834 2.69141 50 3.49544 50 4.4349C50 5.28971 49.7744 6.06836 49.3232 6.76237C48.872 7.45638 48.2764 7.98958 47.5364 8.36198C48.4117 10.0124 49.1246 11.4681 49.6932 12.7292L49.7112 12.7884C49.7112 12.8392 49.6932 12.8815 49.6481 12.9154C49.612 12.9492 49.5578 12.9746 49.5127 12.9746H44.9193C44.784 12.9746 44.7028 12.9238 44.6576 12.8223L42.7355 9.08984C42.6994 8.98828 42.6091 8.9375 42.4738 8.9375H39.0085C38.8911 8.9375 38.8009 8.99674 38.7287 9.10677C38.7016 9.13216 38.6926 9.18294 38.6926 9.25911V12.6784C38.6926 12.7292 38.6836 12.7799 38.6565 12.8307C38.6024 12.9408 38.5031 13 38.3587 13H34.3339V12.9831ZM44.5133 5.04427C44.7118 5.04427 44.8652 5.00195 44.9825 4.90885C45.0908 4.81576 45.154 4.69727 45.154 4.54492C45.154 4.40951 45.0998 4.29102 44.9915 4.19792C44.8832 4.10482 44.7298 4.0625 44.5133 4.0625H39.1258C39.0716 4.0625 39.0175 4.07943 38.9453 4.12175C38.9092 4.1556 38.8821 4.20638 38.8821 4.2487V4.88346C38.8821 4.93425 38.9002 4.97656 38.9453 5.01042C38.9994 5.04427 39.0536 5.06966 39.1258 5.06966L44.5133 5.04427Z" fill="#002B41"/>
+            <path d="M51.3016 13C51.2194 13 51.1554 12.9746 51.0914 12.9239C51.0274 12.8731 51 12.8139 51 12.7378V0.296031C51 0.211451 51.0274 0.135329 51.0823 0.0845804C51.1371 0.0253741 51.2011 0 51.2834 0H65.7166C65.7989 0 65.8629 0.0253741 65.9177 0.0845804C65.9726 0.143787 66 0.211451 66 0.296031V3.72999C66 3.81457 65.9726 3.8907 65.9177 3.94144C65.8629 4.00065 65.7989 4.02602 65.7166 4.02602H56.0183C55.936 4.02602 55.872 4.0514 55.8172 4.10215C55.7623 4.1529 55.7349 4.2121 55.7349 4.28822V4.78725C55.7349 4.86337 55.7623 4.92258 55.8172 4.97333C55.872 5.02407 55.936 5.04945 56.0183 5.04945H65.7166C65.7989 5.04945 65.8629 5.07482 65.9177 5.13403C65.9726 5.19323 66 5.25244 66 5.32856V8.66949C66 8.74561 65.9726 8.80482 65.9177 8.86402C65.8629 8.92323 65.7989 8.9486 65.7166 8.9486H56.0183C55.936 8.9486 55.872 8.97398 55.8172 9.02472C55.7623 9.07547 55.7349 9.13468 55.7349 9.2108V12.7378C55.7349 12.8139 55.7075 12.8731 55.6435 12.9239C55.5795 12.9746 55.5155 13 55.4333 13H51.3016Z" fill="#002B41"/>
+        </svg>
+        <svg class=logotype2 width="81" height="13" viewBox="0 0 81 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.88591 12.9915C5.79278 12.9915 5.71828 12.9662 5.6624 12.907C5.60652 12.8479 5.57858 12.7887 5.57858 12.7126V4.30234C5.57858 4.22627 5.55064 4.1671 5.49476 4.11639C5.43888 4.06567 5.37369 4.04031 5.28987 4.04031H0.288708C0.223516 4.04031 0.14901 4.0065 0.0838184 3.94733C0.0279395 3.87971 0 3.81209 0 3.75292V0.278935C0 0.219767 0.0279395 0.152145 0.0838184 0.0760723C0.139697 0.0253571 0.204889 0 0.288708 0H15.7113C15.7951 0 15.8603 0.0253571 15.9162 0.0760723C15.9721 0.152145 16 0.219767 16 0.278935V3.75292C16 3.81209 15.9721 3.87971 15.9162 3.95579C15.851 4.01496 15.7765 4.04876 15.7113 4.04876H10.7008C10.6356 4.04876 10.5704 4.07412 10.5052 4.12484C10.44 4.17555 10.4121 4.23472 10.4121 4.31079V12.7211C10.4121 12.7971 10.3842 12.8563 10.3283 12.9155C10.2724 12.9746 10.1979 13 10.1048 13H5.88591V12.9915Z" fill="#002B41"/>
+            <path d="M16.3339 12.9831C16.2437 12.9831 16.1624 12.9492 16.0993 12.89C16.0361 12.8307 16 12.7546 16 12.6699V0.31315C16 0.228514 16.0361 0.152342 16.0993 0.0930969C16.1624 0.0338521 16.2437 0 16.3339 0H27.2713C28.1196 0 28.8957 0.169271 29.6176 0.507813C30.3395 0.846354 30.9171 1.35417 31.3503 2.02279C31.7834 2.69141 32 3.49544 32 4.4349C32 5.28971 31.7744 6.06836 31.3232 6.76237C30.872 7.45638 30.2764 7.98958 29.5364 8.36198C30.4117 10.0124 31.1246 11.4681 31.6932 12.7292L31.7112 12.7884C31.7112 12.8392 31.6932 12.8815 31.6481 12.9154C31.612 12.9492 31.5578 12.9746 31.5127 12.9746H26.9193C26.784 12.9746 26.7028 12.9238 26.6576 12.8223L24.7355 9.08984C24.6994 8.98828 24.6091 8.9375 24.4738 8.9375H21.0085C20.8911 8.9375 20.8009 8.99674 20.7287 9.10677C20.7016 9.13216 20.6926 9.18294 20.6926 9.25912V12.6784C20.6926 12.7292 20.6836 12.7799 20.6565 12.8307C20.6024 12.9408 20.5031 13 20.3587 13H16.3339V12.9831ZM26.5223 5.04427C26.7208 5.04427 26.8742 5.00195 26.9915 4.90885C27.0998 4.81576 27.163 4.69726 27.163 4.54492C27.163 4.4095 27.1089 4.29101 27.0006 4.19792C26.8923 4.10482 26.7389 4.0625 26.5223 4.0625H21.1348C21.0807 4.0625 21.0265 4.07943 20.9543 4.12174C20.9182 4.1556 20.8911 4.20638 20.8911 4.2487V4.88346C20.8911 4.93424 20.9092 4.97656 20.9543 5.01042C21.0085 5.04427 21.0626 5.06966 21.1348 5.06966L26.5223 5.04427Z" fill="#002B41"/>
+            <path d="M33.4871 13C33.3188 13 33.1973 12.9408 33.1038 12.8308C33.0104 12.7209 32.9823 12.5856 33.0104 12.4418L36.5995 0.312948C36.6276 0.211452 36.6836 0.135329 36.7771 0.0845803C36.8706 0.0253741 36.9641 0 37.0762 0H44.9181C45.0303 0 45.1331 0.0338327 45.2266 0.0930389C45.32 0.152245 45.3761 0.228368 45.3948 0.312948L48.984 12.4418C49.0214 12.594 48.9933 12.7209 48.8999 12.8308C48.8064 12.9408 48.6755 13 48.5073 13H44.3854C44.2732 13 44.1797 12.9746 44.0863 12.9154C43.9928 12.8562 43.9367 12.7801 43.9087 12.6871L43.6189 11.6805C43.6096 11.6298 43.5722 11.5875 43.5161 11.5537C43.46 11.5198 43.404 11.4945 43.3292 11.4945H38.6465C38.581 11.4945 38.5156 11.5114 38.4595 11.5537C38.4035 11.5875 38.3661 11.6383 38.3567 11.6805C38.3287 11.7905 38.3006 11.8835 38.2726 11.9597C38.2446 12.0358 38.2259 12.1034 38.2072 12.1627C38.1137 12.4841 38.0576 12.704 38.0389 12.8139C38.0015 12.9408 37.8987 13 37.7492 13H33.4871ZM42.002 7.46845C42.0954 7.46845 42.1702 7.43461 42.2263 7.36695C42.2824 7.29928 42.2917 7.2147 42.2637 7.11321L41.3851 4.16135C41.3757 4.08523 41.3196 4.0514 41.2168 4.0514H40.7682C40.6841 4.0514 40.628 4.08523 40.5999 4.16135L39.7213 7.11321V7.18933C39.7213 7.26545 39.7494 7.32466 39.7961 7.38387C39.8429 7.44307 39.9083 7.46845 39.9924 7.46845H42.002Z" fill="#002B41"/>
+            <path d="M49.0827 12.907C49.0276 12.8562 49 12.7885 49 12.704V9.25309C49 9.16851 49.0276 9.10085 49.0827 9.0501C49.1195 8.99089 49.1838 8.95706 49.2665 8.95706H53.807C53.8989 8.95706 53.9724 8.93168 54.0276 8.88094C54.0827 8.83019 54.1103 8.77098 54.1103 8.69486V4.3136C54.1103 4.23748 54.0827 4.17827 54.0276 4.12752C53.9724 4.07677 53.8989 4.0514 53.807 4.0514H49.2665C49.1838 4.0514 49.1287 4.02602 49.0827 3.97528C49.0276 3.92453 49 3.85686 49 3.77228V0.296031C49 0.211451 49.0276 0.143787 49.0827 0.0930389C49.1195 0.0338327 49.1838 0 49.2665 0H63.7151C63.7794 0 63.8529 0.0338327 63.9173 0.0930389C63.9724 0.169161 64 0.236825 64 0.296031V3.77228C64 3.83149 63.9724 3.89915 63.9173 3.97528C63.8621 4.02602 63.7978 4.0514 63.7151 4.0514H59.1746C59.1103 4.0514 59.046 4.07677 58.9816 4.13598C58.9173 4.19518 58.8897 4.25439 58.8897 4.3136V8.69486C58.8897 8.77098 58.9173 8.83019 58.9816 8.88094C59.046 8.93168 59.1103 8.95706 59.1746 8.95706H63.7151C63.7794 8.95706 63.8529 8.99089 63.9173 9.0501C63.9724 9.12622 64 9.19388 64 9.25309V12.704C64 12.7632 63.9724 12.8308 63.9173 12.907C63.8529 12.9662 63.7794 13 63.7151 13H49.2665C49.1838 13 49.1287 12.9746 49.0827 12.907Z" fill="#002B41"/>
+            <path d="M76.072 8.50878C76.0811 8.54262 76.1177 8.55953 76.1634 8.55107C76.2091 8.54262 76.2366 8.5257 76.2366 8.48341V0.296031C76.2366 0.211451 76.264 0.135329 76.328 0.0845803C76.392 0.0253741 76.456 0 76.5383 0H80.6983C80.7806 0 80.8446 0.0253741 80.9086 0.0845803C80.9726 0.143787 81 0.211451 81 0.296031V12.7378C81 12.8139 80.9726 12.8731 80.9086 12.9239C80.8446 12.9746 80.7806 13 80.7166 13L72.6617 12.9831C72.5154 12.9831 72.424 12.9239 72.3783 12.797L69.9646 4.45739C69.9554 4.40664 69.9189 4.38972 69.8549 4.38972C69.7909 4.39818 69.7634 4.42355 69.7634 4.4743V12.7209C69.7634 12.797 69.736 12.8562 69.6811 12.9154C69.6263 12.9746 69.5531 13 69.4617 13H65.3017C65.2194 13 65.1554 12.9746 65.0914 12.9154C65.0274 12.8562 65 12.797 65 12.7209V0.2622C65 0.202993 65.0274 0.143787 65.0823 0.0845803C65.1371 0.0253741 65.2011 0 65.2834 0H73.3931C73.5303 0 73.6126 0.0592073 73.6583 0.186078L76.072 8.50878Z" fill="#002B41"/>
+        </svg>
+        <svg class=logotype3 width="33" height="13" viewBox="0 0 33 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.15459 13C3.40097 13 2.71498 12.8309 2.07729 12.4928C1.43961 12.1547 0.937203 11.6983 0.560391 11.1151C0.18358 10.5403 0 9.91483 0 9.23017V3.76983C0 3.08517 0.18358 2.45969 0.560391 1.88491C0.937203 1.31014 1.43961 0.853706 2.07729 0.507152C2.71498 0.169051 3.41063 0 4.15459 0H15.5942C15.7101 0 15.8068 0.0338086 15.8841 0.101429C15.9614 0.169049 16 0.253575 16 0.355005V3.71066C16 3.81209 15.9614 3.89662 15.8841 3.96424C15.8068 4.03186 15.7101 4.06567 15.5942 4.06567H5.42995C5.31401 4.06567 5.21739 4.09948 5.1401 4.1671C5.0628 4.23472 5.02415 4.31924 5.02415 4.42068V8.48634C5.02415 8.58777 5.0628 8.6723 5.1401 8.73992C5.21739 8.80754 5.31401 8.84135 5.42995 8.84135H15.5942C15.7101 8.84135 15.8068 8.87516 15.8841 8.94278C15.9614 9.0104 16 9.09493 16 9.19636V12.645C16 12.7464 15.9614 12.8309 15.8841 12.8986C15.8068 12.9662 15.7101 13 15.5942 13H4.15459Z" fill="#002B41"/>
+            <path d="M20.0656 13C19.3281 13 18.6568 12.8308 18.0328 12.4925C17.4088 12.1542 16.9171 11.6975 16.5484 11.1139C16.1796 10.5387 16 9.91282 16 9.22772V3.7892C16 3.09564 16.1796 2.46129 16.5484 1.88614C16.9171 1.311 17.4088 0.854262 18.0328 0.507482C18.6568 0.169161 19.3376 0 20.0656 0H28.9344C29.6813 0 30.3715 0.169161 30.9861 0.507482C31.6101 0.845803 32.1018 1.30254 32.4611 1.88614C32.8204 2.46129 33 3.09564 33 3.7892V9.22772C33 9.91282 32.8204 10.5387 32.4611 11.1139C32.1018 11.689 31.6101 12.1457 30.9861 12.4925C30.3621 12.8308 29.6813 13 28.9344 13H20.0656ZM27.3932 8.63566C27.5823 8.63566 27.7525 8.56799 27.8943 8.44112C28.0362 8.31425 28.1023 8.14509 28.1023 7.95055V4.9987C28.1023 4.80417 28.0362 4.635 27.8943 4.49968C27.7525 4.36435 27.5918 4.29668 27.3932 4.29668H21.6446C21.4461 4.29668 21.2853 4.36435 21.134 4.49968C20.9922 4.635 20.9166 4.80417 20.9166 4.9987V7.95055C20.9166 8.14509 20.9922 8.31425 21.134 8.44112C21.2759 8.56799 21.4461 8.63566 21.6446 8.63566H27.3932Z" fill="#002B41"/>
+        </svg>  
+      </div>
+
+        <nav class="navbar">
+          <ul>
+            <button class="nav-btn active">Главная</button>
+            <li class="kg3"><a class="nav_text" href=#>О нас</a></li>
+            <li class="kg3"><a class="nav_text" href="#">Награды</a></li>
+            <li class="kg3"><a class="nav_text" href="#">Тарифы</a></li>
+            <li class="kg3"><a class="nav_text" href="#">Акции</a></li>
+            <li class="kg3"><a class="nav_text" href="#">Запись</a></li>
+            <li class="kg3"><a class="nav_text" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="socail_media">
+            <div class="social-icons">
+              <div class="icon_wrapper">
+                <img class="icon_messanger" src="/img/telegram.svg"  alt="Telegram">
+                <a class="icon_button" href="#"></a>
+              </div>
+              <div class="icon_wrapper">
+                <img class="icon_messanger" src="/img/whatsapp.svg"  alt="WhatsApp">
+                <a class="icon_button" href="#"></a>
+              </div>
+              <div class="icon_wrapper">
+                <img class="icon_messanger" src="/img/viber.svg" alt="Viber">
+                <a class="icon_button" href="#"></a>
+              </div>
+            </div>
+            <span class="phone">+7 (910) 684-90-53</span>
+            <button class="more-btn">Подробнее <img src="./img/arrow.svg" alt="стрелка"></button>
+          </div>
+
+          <div class="burger"></div>
+
+    </header>
+    
+    <section class="first_screen wrapper">
+        <div class="text_container">
+            <div class="street">ул. Черкизова 14, Москва</div>
+
+            <h1 class="offer">
+              Покоряем   волны <br>
+              <span class="offer-inline-group">
+                <span class="hide_on_mobile">вместе</span>
+                <a class="bth_zap"><img class="serf" src="/img/serf.png"></a> 
+                <span>с нами!</span>
+              </span>
+            </h1>
+
+        <div class="wave1"></div>
+
+        <button class="button_adaptive">онлайн-запись</button>
+
+        <div class="subtitle">
+            SurfTrainCo предлагает вам доступное, <br>
+            комплексное и приятное обучение серфингу <br>
+            для всех уровней навыков и возрастов.
+        </div>
+        </div>
+
+        <div class="cards_container">
+            <div class="feature-card1">
+                <div class="card1_img card_img"></div>
+                <div class="card1_logo card_logo"></div>
+                <div class="flex_mobile">
+                  <div class="card1_title card_title">Профессиональное руководство</div>
+                <div class="card1_subtitle card_subtitle">опытные инструкторы помогут вам освоить основы и быстро совершенствоваться.</div>
+                </div>
+            </div>
+
+            <div class="feature-card2">
+                <div class="card2_img card_img"></div>
+                <div class="card2_logo card_logo"></div>
+                <div class="flex_mobile">
+                  <div class="card2_title card_title">Качественное оборудование</div>
+                <div class="card2_subtitle card_subtitle">доски и гидрокостюмы помогут <br>вам оставаться в безопасности 
+                    <br>и получать удовольствие.</div>
+                </div>
+            </div>
+
+            <div class="feature-card3">
+                <div class="card3_img card_img"></div>
+                <div class="card3_logo card_logo"></div>
+                <div class="flex_mobile">
+                  <div class="card3_title card_title">Благоприятная обстановка</div>
+                <div class="card3_subtitle card_subtitle">благоприятная и безопасная <br>обстановка в обучении с людьми <br>
+                    со схожим опытом и целями.</div>
+                </div>
+            </div>
+
+            <div class="feature-card4">
+                <div class="card4_img card_img"></div>
+                <div class="card4_logo card_logo"></div>
+                <div class="flex_mobile">
+                  <div class="card4_title card_title">Дополнительные услуги</div>
+                <div class="card4_subtitle card_subtitle">услуги фотографий и видео помогут вам запечатлить и поделиться опытом серфинга.</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="second_screen wrapper">
+        
+        <div class="sec_text_block">
+            <div class="surfing_text"><h1>Серфинг</h1></div>
+            <div class="life_style"><h1>это стиль жизни</h1></div>
+        </div>
+
+        <div class="sec_cards">
+            <div class="big_card">
+                <div class="surftrainco_logo"></div>
+            </div>
+            
+            <div class="two_cards">
+                <div class="middle_card">
+                  <div class="logo_card">
+                    <div class="logo_icon logo_icon_2"></div>
+                  </div>
+                    <h1>SurfTrainCo —</h1>
+                    
+                    <div class="paragraph">
+                        <p class="first_indent">это компания по обучению серфингу, расположенная в Москве, которая открылась в 2018 году.</p>
+                        <p class="second_indent">Ее миссия состоит в том, чтобы обеспечить доступное, всестороннее  и приятное обучение серфингу  для всех уровней навыков и возрастов.</p>
+                    </div>
+                    <div class="logo"></div>
+                </div>
+    
+                <div class="smale_card">
+                    <div class="avatars"></div>
+                    <div class="student">
+                      <div class="students_number">2000+</div>
+                      <div class="students">учеников</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="big_text_container">
+            <p>Не бойтесь испытать себя и свои возможности - поддайтесь <br>
+                волнам и пусть они помогут вам раскрыть свой истинный <br>
+                потенциал. Погрузитесь в мир серфинга и почувствуйте, как ваша <br>
+                жизнь наполняется яркими эмоциями и волнующими <br>
+                приключениями. Погнали волну!</p>
+        </div>
+        <div class="wave"></div>
+    </section>
+              
+    <section class="third_screen wrapper">
+      <div class="third_scr_title">
+        <h1 class="awards">НАГРАДЫ</h1>
+        <h2 class="our_club">нашего клуба</h2>
+        <nav class="years">
+          <a href="#" class="active">2022</a>
+          <a href="#">2021</a>
+          <a href="#">2019</a>
+        </nav>
+      </div>
+    
+      <div class="awards_carousel">
+        <div class="award-card award-card--secondary">
+          <div class="image1"></div>
+          <div class="text text_adaptive">
+            <p class="small_title">Награда</p>
+            <h2 class="small_h2">«За успешное продвижение серфинга»</h2>
+            <p class="org">от Международного <br>Олимпийского Комитета</p>
+            <p class="year">(2022)</p>
+            <div class="link1">
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="award-card award-card--main">
+          <div class="image"></div>
+          <div class="text text_adaptive">
+            <p class="small_title">Награда</p>
+            <h2 class="small_h2">«Лучший инструктор по серфингу 2022»</h2>
+            <p class="org">от международной организации<br>Surfers Against Sewage (SAS)</p>
+            <p class="year">(2022)</p>
+            <div class="link">
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="award-card award-card--image">
+          <div class="image3"></div>
+          <div class="text text_adaptive">
+            <p class="small_title">Премия</p>
+            <h2 class="small_h2">«За исключительные достижения в серфинге»</h2>
+            <p class="org">от международной организации World Surf League (WSL)</p>
+            <p class="year">(2022)</p>
+            <div class="link3">
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="forth_screen wrapper">
+      
+      <div class="forth_text_container">
+        <h1>
+          <span class="bold">ПРОГРАММЫ</span>
+          <span class="script">обучения</span>
+        </h1>
+      </div>
+
+        <section class="training_section">
+            <div class="card_wrapper">
+              <div class="card">
+                <div class="card_image easy"></div>
+                <h3 class="tariff_mintitle">-тариф-</h3>
+                <h3 class="tariff_title">Easy Start</h3>
+                <div class="duration">
+
+                  <div class="duration_colums">
+
+                    <div class="calendar">
+                      <div class="calendar_img"></div>
+                      <div class="texting">
+                        <h6>длительноть курса</h6>
+                      <h5>5 уроков</h5>
+                      </div>
+                    </div>
+  
+                    <div class="timer">
+                      <div class="timer_img"></div>
+                      <div class="texting">
+                        <h6>длительноть урока</h6>
+                      <h5>45 минут</h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+
+                </div>
+
+                <ul class="features">
+                  <li class="container_points"><div class="points"></div> Воссозданный искусственный речной порог</li>
+                  <li class="container_points"><div class="points"></div> Доска с плавником, как на океане</li>
+                  <li class="container_points"><div class="points"></div> Даёт возможность отработать технику поворотов, трюки на волне, развить баланс и мышечную память</li>
+                  <li class="container_points"><div class="points"></div> Помогает подготовиться к катанию на океанских волнах (работа тела после поп-ап)</li>
+                </ul>
+                <div class="price_block">
+                  <span class="old_price">29 000 руб.</span>
+                  <span class="new_price">12 990 руб.</span>
+                </div>
+                <button class="rate-btn">Выбрать тариф</button>
+              </div>
+        
+              <!-- Flow Rider -->
+              <div class="card">
+                <div class="card_image flow"></div>
+                <h3 class="tariff_mintitle">-тариф-</h3>
+                <h3 class="tariff_title">Flow Rider</h3>
+
+                <div class="duration">
+
+                  <div class="duration_colums">
+
+                    <div class="calendar">
+                      <div class="calendar_img"></div>
+                      <div class="texting">
+                        <h6>длительноть курса</h6>
+                        <h5>5 уроков</h5>
+                      </div>
+                    </div>
+  
+                    <div class="timer">
+                      <div class="timer_img"></div>
+                      <div class="texting">
+                        <h6>длительноть урока</h6>
+                      <h5>45 минут</h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                <div class="block_text">
+                  <ul class="features">
+                    <li class="container_points"><div class="points"></div> Напор воды, направленный вверх  по натянутой тканевой поверхности</li>
+                    <li class="container_points"><div class="points"></div> Доска без плавников, нечто среднее между скейтбордом и сноубордом</li>
+                    <li class="container_points"><div class="points"></div> Даёт возможность развить баланс и получить яркие эмоции от катания на волне</li>
+                    <li class="container_points"><div class="points"></div> Возможность поймать удовольствие от движения и маневрирования на доске по водному потоку</li>
+                  </ul>
+                  <div class="price_block featur2">
+                    <span class="old_price">22 000 руб.</span>
+                    <span class="new_price">10 990 руб.</span>
+                  </div>
+                  <button class="rate-btn featur_btn2">Выбрать тариф</button>
+                </div>
+
+              </div>
+            </div>
+          </section>
+    </section>
+
+    <section class="fivth_screen wrapper">
+
+       <div class="five_top_container">
+
+        <h2><span class="title_bold">АКЦИИ</span> <span class="title_red">и скидки</span></h2>
+
+        <div class="navigation_buttons">
+            <button class="nav_btn">
+              <div class="arrow_stright1"></div>
+            </button>
+            <button class="nav_btn">
+              <div class="arrow_stright2"></div>
+            </button>
+          </div>
+
+       </div>
+
+        <div class="offers_container">
+          <div class="offer_card">
+            
+            <div class="scr5_content1">
+              <div class="offer_date">
+                <div class="first_line_offer offer1">
+                  <h6 class="dates date1">До 25.04.2024</h6>
+                <div class="arrow"></div>
+                </div>
+                <p class="fiv_text">Бесплатный урок серфинга для первого посещения</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="offer_card">
+            
+            <div class="scr5_content2">
+              <div class="offer_date">
+                <div class="first_line_offer offer2">
+                  <h6 class="dates date2">Бессрочно</h6>
+                <div class="arrow arrow2"></div>
+                </div>
+                <p class="fiv_text content2">Сертификация или аттестация по окончании курса</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="offer_card">
+            
+            <div class="scr5_content3">
+              <div class="offer_date">
+                <div class="first_line_offer offer2">
+                  <h6 class="dates date3">До 12.05.2024</h6>
+                <div class="arrow arrow3"></div>
+                </div>
+                <p class="fiv_text content3">Пакет серфинга <br>для двоих</p>
+              </div>
+            </div>
+            
+          </div>
+        
+        <div class="surfboard">
+            <div class="surfboard_right"></div>
+            <div class="surfboard_left"></div>
+        </div>
+
+    </section>
+
+    <section class="big_text_container wrapper">
+      <p class="big_text_cont2">Помните, что каждый ваш выход на доску - это возможность <br>
+          <span class="hide_on_mobile">выйти за пределы своих комфортных зон</span> и стать лучше, сильнее <br>
+          и увереннее. Поверьте в себя, стремитесь к новым вершинам <br>
+          и не забывайте наслаждаться каждым мгновением на доске.
+      </p>
+      <div class="wave3"></div>
+    </section>
+      
+    <section class="sixth_screen wrapper">
+      <h2 class="sixscr_title">
+        <span class="bold2">ЗАПИСЬ</span> <span class="italic">на занятие</span>
+      </h2>
+    
+      <div class="booking_container">
+        <div class="form_block">
+          <form class="booking_form">
+            <div class="date_time">
+              <select class="form-control" required>
+                <option value="" disabled selected>Выберите дату</option>
+                <option value="2024-03-20">20 марта 2024</option>
+                <option value="2024-03-21">21 марта 2024</option>
+                <option value="2024-03-22">22 марта 2024</option>
+            </select>
+            <select class="form-control" required>
+              <option value="" disabled selected>Выберите время</option>
+              <option value="10:00">10:00</option>
+              <option value="12:00">12:00</option>
+              <option value="14:00">14:00</option>
+              <option value="16:00">16:00</option>
+            </select>
+            </div>
+    
+            <div class="tariff">
+              <select class="form-control" required>
+                <option value="" disabled selected>Выберите подходящий тариф</option>
+                <option value="easy-start">Easy Start - 12 990 руб.</option>
+                <option value="flow-rider">Flow Rider - 10 990 руб.</option>
+              </select>
+            </div>
+    
+            <div class="name_tel">
+                <input type="text" class="form-control" placeholder="Имя/Иван" required>
+                <input type="tel" class="form-control" placeholder="8(999) 999-99-99" required>
+            </div>
+    
+            <div class="submit_container">
+              <button type="submit">Записаться онлайн</button>
+              <p class="agree_text">
+                Нажимая кнопку, вы соглашаетесь с
+                <a href="#">политикой обработки данных</a>
+              </p>
+            </div>
+          </form>
+        </div>
+    
+        <!-- Картинка -->
+        <div class="image_block"></div>
+      </div>
+    </section>
+    
+    <section class="seventh_screen wrapper">
+
+        <div class="seven_titile_container">
+            <h2 class="we_on_map">мы на карте </h2>
+            <h2 class="place">где искать?</h2>
+        </div>
+
+        <div class="graphic"></div>
+
+        <div class="social_media_container">
+
+            <div class="social_wrapper">
+              
+              <div class="line_first">
+                <div class="first_line">
+                <p class="text_one_container">социальные сети</p>
+                <div class="icons_footer">
+                    <div class="instagram"></div>
+                    <div class="tiktok"></div>
+                    <div class="vk"></div>
+                </div>
+            </div>
+
+            <div class="sec_line">
+                <div class="number text_one_container">+7 (910) 684-90-53</div>
+                <div class="messenger_icons_footer">
+                  <div class="telegram"></div>
+                  <div class="whatsapp"></div>
+                  <div class="viber"></div>
+                </div>
+            </div>
+              </div>
+
+            <div class="online_text logo_footer">
+              <div class="logo_icon"></div>
+            </div>
+
+            <div class="line_two">
+              <div class="third_line">
+                <div class="point">
+                  <h4 class="street2 text_one_container">ул. Черкизова 14,<br>Москва</h4>
+                </div>
+            </div>
+
+            <div class="fourth_line">
+                <h4 class="way">Как добраться?</h4>
+                <h5 class="way2 text_one_container">Маршруты: 139, 28б</h5>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer_box wrapper">
+        <div class="footer_bg_text">CONTACT</div>
+      
+        <div class="footer_content">
+          <div class="footer_logo">
+            <div class="logo_img_text"></div>
+            <p class="logo_text small_text_footer none_text">Свяжитесь с нами любым удобным способом</p>
+            <div class="messenger_icons_footer">
+              <div class="telegram footer_icons"></div>
+              <div class="whatsapp footer_icons"></div>
+              <div class="viber footer_icons"></div>
+            </div>
+          </div>
+      
+          <div class="footer_contacts">
+            <h3 class="footer_title">Контакты</h3>
+            <p class="sub_title">+7 (910) 684-90-53</p>
+            <p class="sub_title">SurfCocommerce@yandex.ru</p>
+            <p class="small_text_footer">г. Москва, ул. Черкизова 14</p>
+            <p class="small_text_footer">Работаем с 8:00-22:00</p>
+          </div>
+      
+          <div class="footer_links">
+            <h3 class="footer_title">Для клиентов</h3>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Награды</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      
+        <div class="footer_bottom_line">
+          <p>(c) SurfTrainCo, 2023</p>
+          <a class="confidatinal" href="#">Политика конфиденциальности</a>
+          <a href="#" class="offer_link">Публичная оферта</a>
+          
+        </div>
+      
+        <button class="scroll_top_btn">
+          <div class="arrow_stright rotetion"></div>
+        </button>
+    </footer>
+      
+</body>
+</html>
